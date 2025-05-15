@@ -1,6 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import HomeHeader from './components/home/HomeHeader'
+import HomePage from './view/HomePage'
+import AboutPage from './view/AboutPage'
+import ProductPage from './view/ProductPage'
+import ContactPage from './view/ContactPage'
+
 
 function App() {
 
@@ -8,13 +12,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element=""/>
-          <Route path="/about" element=""/>
-          <Route path="/product" element=""/>
-          <Route path="/contact" element=""/>
-      </Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/product" element={<ProductPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
       </BrowserRouter>
-      <HomeHeader/>
     </>
   )
 }

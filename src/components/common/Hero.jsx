@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import logo from '../../assets/images/svg/nav-logo.svg';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -20,19 +21,19 @@ const Hero = () => {
             <nav className='px-4'>
                 <div className="max-w-[1320px] mx-auto">
                     <div className="flex justify-between items-center py-[17px]">
-                        <a href="#">
+                        <NavLink to="/">
                             <img src={logo} alt="nav-logo" />
-                        </a>
+                        </NavLink>
                         <div onClick={toggleNavbar} className="z-50 md:hidden flex flex-col justify-between w-6 h-5 cursor-pointer">
                             <span className={`block h-1 rounded-3xl bg-white transition-transform duration-300 ease-in-out ${menuOpen && 'rotate-45 translate-y-2'}`}></span>
                             <span className={`block h-1 rounded-3xl bg-white transition-transform duration-300 ease-in-out ${menuOpen && 'opacity-0'}`}></span>
                             <span className={`block h-1 rounded-3xl bg-white transition-transform duration-300 ease-in-out ${menuOpen && '-rotate-45 -translate-y-2'}`}></span>
                         </div>
                         <ul id='nav-name' className={`list-unstyled flex justify-center items-center nav-link gap-[50px] xl:gap-[60px] mb-0 ${menuOpen ? "show-navbar" : ""}`}>
-                            <li><a className='font-family-primary text-white text-xl leading-[100%] font-semibold' href="#" activeclassname="active" >HOME</a></li>
-                            <li><a className='font-family-primary text-white text-xl leading-[100%] font-semibold' href="#" >About</a></li>
-                            <li><a className='font-family-primary text-white text-xl leading-[100%] font-semibold' href="#" >Product</a></li>
-                            <li><a className='font-family-primary text-white text-xl leading-[100%] font-semibold' href="#">Contact</a></li>
+                            <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold' to="/" activeclassname="active" >HOME</NavLink></li>
+                            <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold' to="/about" activeclassname="active" >About</NavLink></li>
+                            <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold' to="/product" activeclassname="active" >Product</NavLink></li>
+                            <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold' to="/contact" activeclassname="active" >Contact</NavLink></li>
                         </ul>
                     </div>
                 </div>
