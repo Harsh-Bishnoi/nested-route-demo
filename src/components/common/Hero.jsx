@@ -21,8 +21,9 @@ const Hero = () => {
             <nav className='px-4'>
                 <div className="max-w-[1320px] mx-auto">
                     <div className="flex justify-between items-center py-[17px]">
-                        <NavLink to="/">
+                        <NavLink to="/" className="">
                             <img src={logo} alt="nav-logo" />
+                            <p className='text-white font-family-primary text-center font-bold text-[20px] tracking-[3px]'>Car Deal</p>
                         </NavLink>
                         <div onClick={toggleNavbar} className="z-50 md:hidden flex flex-col justify-between w-6 h-5 cursor-pointer">
                             <span className={`block h-1 rounded-3xl bg-white transition-transform duration-300 ease-in-out ${menuOpen && 'rotate-45 translate-y-2'}`}></span>
