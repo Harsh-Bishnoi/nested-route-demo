@@ -1,6 +1,5 @@
 import React from 'react'
 import { CARS_DATA } from '../../utils/helper'
-import CustomBtn from '../common/CustomBtn'
 import { Link } from 'react-router-dom'
 
 const AboutCars = () => {
