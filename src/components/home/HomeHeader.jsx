@@ -13,7 +13,7 @@ const HomeHeader = () => {
                 </div>
                 <div className="max-w-[1140px] px-4 w-full pt-32 pb-18 sm:py-32 z-0">
                     <CustomHeading HeadingText="Drive Your Dream – Explore New & Used Cars Today" />
-                    <CustomDescription descriptionText="Explore our wide selection of new and used vehicles at unbeatable prices. Fast financing, trusted service, and cars you'll love."/>
+                    <CustomDescription descriptionText="Explore our wide selection of new and used vehicles at unbeatable prices. Fast financing, trusted service, and cars you'll love." />
                 </div>
             </div>
         </>
