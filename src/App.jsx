@@ -5,6 +5,7 @@ import AboutPage from './view/AboutPage'
 import ProductPage from './view/ProductPage'
 import ContactPage from './view/ContactPage'
 import AboutCars from './components/product/AboutCars'
+import PageNotFound from './components/common/PageNotFound'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/product" element={<ProductPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/aboutCar" element={<AboutCars/>} />
+          <Route path="*" element={<PageNotFound/>} />
         </Routes>
       </BrowserRouter>
     </>
