@@ -4,6 +4,7 @@ import HomePage from './view/HomePage'
 import AboutPage from './view/AboutPage'
 import ProductPage from './view/ProductPage'
 import ContactPage from './view/ContactPage'
+import AboutCars from './components/product/AboutCars'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/aboutCar" element={<AboutCars/>} />
         </Routes>
       </BrowserRouter>
     </>
