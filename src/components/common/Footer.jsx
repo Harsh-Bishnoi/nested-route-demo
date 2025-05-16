@@ -9,9 +9,9 @@ const Footer = () => {
                 <div className="max-w-[1140px] px-4 mx-auto py-10 sm:py-20">
                     <div className="flex justify-between flex-wrap">
                         <div className="max-w-[550px] w-full max-lg:mb-10">
-                            <div className="max-w-[129px]">
+                            <div className="max-w-[157px] flex flex-col justify-center items-center">
                                 <img src={logo} alt="logo" />
-                                <p className='text-white font-family-primary text-center font-bold text-[20px] tracking-[3px]'>Car Deal</p>
+                                <p className='text-white font-family-primary text-center font-bold text-[20px] tracking-[2px]'>Super Motors</p>
                             </div>
                             <p className='text-white font-family-primary text-lg pt-5 max-w-[500px]'>Precision-engineered for those who demand more than just performance — our vehicles embody art, innovation, and legacy. Every curve, every detail, is crafted to inspire. Experience a new era of driving built on passion, power, and prestige.</p>
                             <div className="flex gap-5 items-center mt-4">
