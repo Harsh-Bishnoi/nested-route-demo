@@ -5,7 +5,7 @@
 }
 
 .active {
-    color: red;
+    color: #F65B08;
 }
 
 @media (max-width:767.98px) {
