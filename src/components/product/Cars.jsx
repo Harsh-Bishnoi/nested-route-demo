@@ -1,12 +1,14 @@
 import React from 'react';
 import { CARS_DATA } from '../../utils/helper';
 import { Link } from 'react-router-dom';
+import CustomSubHeading from '../common/CustomSubHeading';
 
 const Cars = () => {
     return (
         <div className="flex items-center justify-center py-10 sm:py-20 md:py-30 lg:py-32">
             <div className="max-w-[1140px] px-4 w-full">
-                <h2 className='font-family-primary text-5xl text-center font-semibold  text-black pb-8'>Our Products</h2>
+                <h2 className='font-family-primary text-5xl text-center font-semibold text-black pb-8'></h2>
+                <CustomSubHeading SubHeadingText="Our Products" />
                 <div className="flex flex-wrap justify-between gap-y-6">
                     {CARS_DATA.map((item, index) => (
                         <div key={index} className="w-full sm:w-[48%] lg:w-[32%] flex justify-center" >

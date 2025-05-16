@@ -1,13 +1,14 @@
 import React from 'react'
 import CustomInput from '../common/CustomInput'
 import CustomBtn from '../common/CustomBtn'
+import CustomSubHeading from '../common/CustomSubHeading'
 
 const ContactForm = () => {
     return (
         <>
             <div className="flex justify-center items-center py-30">
                 <div className="max-w-[1140px] px-4 w-full mx-auto">
-                    <h2 className='font-family-primary text-center text-5xl pb-8 font-semibold'>Join Us</h2>
+                    <CustomSubHeading SubHeadingText="Join Us" />
                     <div className="flex sm:flex-row flex-col gap-3.5 mb-3.5 justify-center">
                         <CustomInput placeholder="First Name" type="text" />
                         <CustomInput placeholder="Last Name" type="text" />
