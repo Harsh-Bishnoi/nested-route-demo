@@ -6,7 +6,7 @@ import CustomDescription from '../common/CustomDescription'
 const AboutHeader = () => {
   return (
     <>
-      <div className="flex justify-center items-center flex-col bg-[url(../../src/assets/images/png/about-bg-img.webp)] bg-no-repeat bg-cover bg-center relative">
+      <div className="flex justify-center items-center flex-col bg-[url(../src/assets/images/png/about-bg-img.webp)] bg-no-repeat bg-cover bg-center relative">
         <div className="opacity-60 bg-black absolute inset-0"></div>
         <div className="max-w-[1140px] w-full z-1">
           <Hero />

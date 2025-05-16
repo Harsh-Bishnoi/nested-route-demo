@@ -6,7 +6,7 @@ import CustomHeading from '../common/CustomHeading'
 const ProductHeader = () => {
   return (
     <>
-      <div className="flex justify-center items-center flex-col bg-[url(../../src/assets/images/png/product-bg-img.jpg)] bg-no-repeat bg-cover bg-center relative">
+      <div className="flex justify-center items-center flex-col bg-[url(../src/assets/images/png/product-bg-img.jpg)] bg-no-repeat bg-cover bg-center relative">
         <div className="bg-black opacity-60 inset-0 absolute top-0"></div>
         <div className="w-full max-w-[1140px] z-1">
           <Hero />
