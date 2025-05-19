@@ -17,8 +17,9 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/contact" element={<ContactPage />}>
-          <Route index path="form" element={<ContactForm />} />
-          <Route index path="link" element={<Link />} />
+          <Route index element={<ContactForm />} />
+          <Route path="form" element={<ContactForm />} />
+          <Route path="link" element={<Link />} />
         </Route>
         <Route path="/carsdetail" element={<CarsDetail />} />
         <Route path="*" element={<PageNotFound />} />

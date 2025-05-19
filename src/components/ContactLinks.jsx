@@ -9,8 +9,8 @@ const ContactLinks = () => {
                 <div className="max-w-[1140px] px-4 w-full mx-auto">
                     <CustomSubHeading SubHeadingText="Join Us" />
                     <div className="flex gap-5 pl-5 pb-8">
-                        <NavLink activeclassname="active" to="/contact/form" className="font-family-primary font-semibold text-2xl text-black">Form</NavLink>
-                        <NavLink activeclassname="active" to="/contact/link" className="font-family-primary font-semibold text-2xl text-black">Link 2</NavLink>
+                        <NavLink activeclassname="active" to="/contact/form" className="font-family-primary font-semibold text-2xl text-black hover:text-[#ff9248] transition-all duration-200 ease-linear">Form</NavLink>
+                        <NavLink activeclassname="active" to="/contact/link" className="font-family-primary font-semibold text-2xl text-black hover:text-[#ff9248] transition-all duration-200 ease-linear">Link 2</NavLink>
                     </div>
                 </div>
             </div>
