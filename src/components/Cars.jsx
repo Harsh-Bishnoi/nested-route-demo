@@ -1,7 +1,7 @@
 import React from 'react';
-import { CARS_DATA } from '../../utils/helper';
+import { CARS_DATA } from '../utils/helper';
 import { Link } from 'react-router-dom';
-import CustomSubHeading from '../common/CustomSubHeading';
+import CustomSubHeading from './common/CustomSubHeading';
 
 const Cars = () => {
     return (

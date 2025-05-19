@@ -4,7 +4,7 @@ import HomePage from './view/HomePage'
 import AboutPage from './view/AboutPage'
 import ProductPage from './view/ProductPage'
 import ContactPage from './view/ContactPage'
-import AboutCars from './components/product/AboutCars'
+import AboutCars from './components/AboutCars'
 import PageNotFound from './components/common/PageNotFound'
 
 

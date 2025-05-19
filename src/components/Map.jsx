@@ -1,6 +1,6 @@
 import React from 'react'
-import CustomSubHeading from '../common/CustomSubHeading'
-import CustomDescription from '../common/CustomDescription'
+import CustomSubHeading from './common/CustomSubHeading'
+import CustomDescription from './common/CustomDescription'
 
 const Map = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/common/Footer'
-import ProductHeader from '../components/product/ProductHeader'
-import Cars from '../components/product/Cars'
+import ProductHeader from '../components/ProductHeader'
+import Cars from '../components/Cars'
 
 const ProductPage = () => {
   return (

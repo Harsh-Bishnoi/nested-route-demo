@@ -1,7 +1,7 @@
 import React from 'react'
-import CustomInput from '../common/CustomInput'
-import CustomBtn from '../common/CustomBtn'
-import CustomSubHeading from '../common/CustomSubHeading'
+import CustomInput from './common/CustomInput'
+import CustomBtn from './common/CustomBtn'
+import CustomSubHeading from './common/CustomSubHeading'
 
 const ContactForm = () => {
     return (

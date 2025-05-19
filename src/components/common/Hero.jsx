@@ -31,7 +31,7 @@ const Hero = () => {
                             <span className={`block h-1 rounded-3xl bg-white transition-transform duration-300 ease-in-out ${menuOpen && '-rotate-45 -translate-y-2'}`}></span>
                         </div>
                         <ul id='nav-name' className={`list-unstyled flex justify-center items-center nav-link gap-[50px] xl:gap-[60px] mb-0 ${menuOpen ? "show-navbar" : ""}`}>
-                            <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold hover:text-[#ff9248] transition-all duration-200 ease-linear' to="/" activeclassname="active" >HOME</NavLink></li>
+                            <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold hover:text-[#ff9248] transition-all duration-200 ease-linear' to="/" activeclassname="active" >Home</NavLink></li>
                             <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold hover:text-[#ff9248] transition-all duration-200 ease-linear' to="/about" activeclassname="active" >About</NavLink></li>
                             <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold hover:text-[#ff9248] transition-all duration-200 ease-linear' to="/product" activeclassname="active" >Product</NavLink></li>
                             <li><NavLink className='font-family-primary text-white text-xl leading-[100%] font-semibold hover:text-[#ff9248] transition-all duration-200 ease-linear' to="/contact" activeclassname="active" >Contact</NavLink></li>

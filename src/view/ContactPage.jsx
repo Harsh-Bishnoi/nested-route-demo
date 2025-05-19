@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/common/Footer'
-import ContactHeader from '../components/contact/ContactHeader'
-import ContactForm from '../components/contact/ContactForm'
+import ContactHeader from '../components/ContactHeader'
+import ContactForm from '../components/ContactForm'
 
 const ContactPage = () => {
     return (

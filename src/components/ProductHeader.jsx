@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from '../common/Hero'
-import CustomDescription from '../common/CustomDescription'
-import CustomHeading from '../common/CustomHeading'
+import Hero from './common/Hero'
+import CustomDescription from './common/CustomDescription'
+import CustomHeading from './common/CustomHeading'
 
 const ProductHeader = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from '../common/Hero'
-import CustomHeading from '../common/CustomHeading'
-import CustomDescription from '../common/CustomDescription'
+import Hero from './common/Hero'
+import CustomHeading from './common/CustomHeading'
+import CustomDescription from './common/CustomDescription'
 
 const HomeHeader = () => {
     return (
