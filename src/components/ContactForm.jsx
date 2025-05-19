@@ -6,9 +6,8 @@ import CustomSubHeading from './common/CustomSubHeading'
 const ContactForm = () => {
     return (
         <>
-            <div className="flex justify-center items-center py-30">
-                <div className="max-w-[1140px] px-4 w-full mx-auto">
-                    <CustomSubHeading SubHeadingText="Join Us" />
+            <div className="flex justify-center items-center  pb-10 sm:pb-20 md:pb-30 lg:pb-32">
+                <div className="max-w-[1140px] px-4 mx-auto w-full">
                     <div className="flex sm:flex-row flex-col gap-3.5 mb-3.5 justify-center">
                         <CustomInput placeholder="First Name" type="text" />
                         <CustomInput placeholder="Last Name" type="text" />

@@ -1,13 +1,15 @@
 import React from 'react'
 import Footer from '../components/common/Footer'
 import ContactHeader from '../components/ContactHeader'
-import ContactForm from '../components/ContactForm'
+import ContactLinks from '../components/ContactLinks'
+import { Outlet } from 'react-router-dom'
 
 const ContactPage = () => {
   return (
     <>
       <ContactHeader />
-      <ContactForm />
+      <ContactLinks />
+      <Outlet/>
       <Footer />
     </>
   )
