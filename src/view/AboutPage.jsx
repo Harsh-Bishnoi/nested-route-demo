@@ -8,9 +8,9 @@ const AboutPage = () => {
   return (
     <>
       <AboutHeader />
-      <AboutCompany/>
-      <Footer/>
-      </>
+      <AboutCompany />
+      <Footer />
+    </>
   )
 }
 

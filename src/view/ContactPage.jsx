@@ -4,12 +4,12 @@ import ContactHeader from '../components/ContactHeader'
 import ContactForm from '../components/ContactForm'
 
 const ContactPage = () => {
-    return (
-      <>
-        <ContactHeader />
-        <ContactForm/>
-        <Footer/>
-        </>
+  return (
+    <>
+      <ContactHeader />
+      <ContactForm />
+      <Footer />
+    </>
   )
 }
 

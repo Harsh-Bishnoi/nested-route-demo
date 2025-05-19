@@ -18,8 +18,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/aboutCar" element={<AboutCars/>} />
-          <Route path="*" element={<PageNotFound/>} />
+          <Route path="/aboutCar" element={<AboutCars />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>

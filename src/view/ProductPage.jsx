@@ -7,9 +7,9 @@ const ProductPage = () => {
   return (
     <>
       <ProductHeader />
-      <Cars/>
-      <Footer/>
-      </>
+      <Cars />
+      <Footer />
+    </>
   )
 }
 
