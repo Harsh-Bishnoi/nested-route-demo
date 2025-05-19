@@ -4,8 +4,8 @@ import HomePage from './view/HomePage'
 import AboutPage from './view/AboutPage'
 import ProductPage from './view/ProductPage'
 import ContactPage from './view/ContactPage'
-import AboutCars from './components/AboutCars'
 import PageNotFound from './components/common/PageNotFound'
+import CarsDetail from './components/CarsDetail'
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/product" element={<ProductPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/aboutCar" element={<AboutCars />} />
+          <Route path="/carsdetail" element={<CarsDetail />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

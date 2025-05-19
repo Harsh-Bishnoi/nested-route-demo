@@ -16,7 +16,7 @@ const Cars = () => {
                                 <img className="w-full object-cover" src={item.img} alt="car-img"
                                 />
                                 <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
-                                    <Link className='font-family-primary text-white text-xl leading-[100%] relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:rounded hover:after:w-full after:duration-300 after:ease-linear' to="/aboutCar">Cars Detail</Link>
+                                    <Link className='font-family-primary text-white text-xl leading-[100%] relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:rounded hover:after:w-full after:duration-300 after:ease-linear' to="/carsdetail">Cars Detail</Link>
                                 </div>
                             </div>
                         </div>

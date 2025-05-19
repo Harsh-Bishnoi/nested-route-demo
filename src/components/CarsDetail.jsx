@@ -3,7 +3,7 @@ import { CARS_DATA } from '../utils/helper'
 import { Link } from 'react-router-dom'
 import CustomSubHeading from './common/CustomSubHeading'
 
-const AboutCars = () => {
+const CarsDetail = () => {
     return (
         <>
             <div className="flex justify-center items-center bg-black">
@@ -34,4 +34,4 @@ const AboutCars = () => {
     )
 }
 
-export default AboutCars
+export default CarsDetail
