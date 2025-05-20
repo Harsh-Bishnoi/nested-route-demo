@@ -21,7 +21,7 @@ function App() {
           <Route path="form" element={<ContactForm />} />
           <Route path="link" element={<Link />} />
         </Route>
-        <Route path="/carsdetail" element={<CarsDetail />} />
+        <Route path="/carsdetail/:id" element={<CarsDetail />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

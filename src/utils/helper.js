@@ -10,6 +10,7 @@ import landCrusior from '../assets/images/svg/land-crusier.svg'
 
 export const CARS_DATA = [
     {
+        id: 1,
         img: lamborgini,
         name: "Lamborghini Huracán",
         type: "Supercar",
@@ -18,6 +19,7 @@ export const CARS_DATA = [
         features: ["V10 Engine", "All-Wheel Drive", "Carbon Ceramic Brakes"]
     },
     {
+        id: 2,
         img: wrangler,
         name: "Jeep Wrangler Rubicon",
         type: "Off-Road",
@@ -26,6 +28,7 @@ export const CARS_DATA = [
         features: ["4x4 Drivetrain", "High Ground Clearance", "Rock-Trac Transfer Case"]
     },
     {
+        id: 3,
         img: ScorpioN,
         name: "Mahindra Scorpio-N",
         type: "SUV / Off-Road",
@@ -34,6 +37,7 @@ export const CARS_DATA = [
         features: ["4XPLOR Terrain Modes", "Body-on-Frame Design", "AdrenoX Infotainment System"]
     },
     {
+        id: 4,
         img: ferrari,
         name: "Ferrari 296 GTB",
         type: "Supercar",
@@ -42,6 +46,7 @@ export const CARS_DATA = [
         features: ["Plug-in Hybrid V6", "Active Aerodynamics", "Performance Traction Control"]
     },
     {
+        id: 5,
         img: ScorpioClassic,
         name: "Mahindra Scorpio Classic",
         type: "SUV / Off-Road",
@@ -50,6 +55,7 @@ export const CARS_DATA = [
         features: ["Strong Suspension", "Spacious Interior", "Multi-Drive Modes"]
     },
     {
+        id: 6,
         img: McLaren,
         name: "McLaren 720S",
         type: "Supercar",
@@ -58,6 +64,7 @@ export const CARS_DATA = [
         features: ["Twin-Turbo V8", "Carbon Fiber Monocoque", "Active Suspension"]
     },
     {
+        id: 7,
         img: defender,
         name: "Land Rover Defender",
         type: "Off-Road",
@@ -66,6 +73,7 @@ export const CARS_DATA = [
         features: ["Terrain Response System", "All-Terrain Progress Control", "Adjustable Air Suspension"]
     },
     {
+        id: 8,
         img: proche,
         name: "Porsche 911 Turbo S",
         type: "Supercar",
@@ -74,6 +82,7 @@ export const CARS_DATA = [
         features: ["Twin-Turbocharged Boxer Engine", "All-Wheel Drive", "Adaptive Aerodynamics"]
     },
     {
+        id: 9,
         img: landCrusior,
         name: "Toyota Land Cruiser",
         type: "Off-Road",
