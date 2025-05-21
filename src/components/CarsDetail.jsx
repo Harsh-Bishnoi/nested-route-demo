@@ -5,6 +5,7 @@ import CustomSubHeading from './common/CustomSubHeading';
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
+
 const CarsDetail = () => {
     const { id } = useParams();
     const car = CARS_DATA.find(item => item.id.toString() === id);
@@ -12,74 +13,81 @@ const CarsDetail = () => {
     if (!car) {
         return (
             <div className="flex justify-center items-center min-h-screen bg-black text-white">
-                <p className="font-family-primary font-bold text-5xl">😞 oh! Car Not Found</p>
+                <p className="text-4xl sm:text-5xl font-semibold font-family-primary">😞 Oh no! Car Not Found</p>
             </div>
         );
     }
 
     return (
-        <div className="flex justify-center items-center bg-black min-h-screen py-10 sm:py-20 md:py-30 lg:py-32 flex-col">
-            <div className="max-w-[1140px] px-4 w-full">
+        <div className="min-h-screen bg-gradient-to-br from-black to-gray-900 py-10 sm:py-16 px-4 flex flex-col items-center">
+            <div className="w-full max-w-[1140px]">
                 <CustomSubHeading SubHeadingClass="text-white" SubHeadingText="Car Details" />
-                <div
-                    className="w-full max-w-[800px] mx-auto border rounded-lg p-6 text-white transition-shadow duration-300 hover:shadow-lg hover:shadow-white"
-                    style={{ background: 'linear-gradient(135deg, #000000, #1a1a1a)' }}  >
-                    <img className="w-full object-cover rounded" src={car.img} alt={car.name} />
-                    <h3 className='font-family-primary text-2xl font-medium pt-3'>Name: {car.name}</h3>
-                    <p className='font-family-primary text-xl font-medium pt-2'>Type: {car.type}</p>
-                    <p className='font-family-primary text-xl font-medium pt-2'>Brand: {car.brand}</p>
-                    <p className='font-family-primary text-xl font-medium pt-2'>Fuel Type: {car.fuelType}</p>
-                    <p className='font-family-primary text-xl font-medium pt-2'>Features: {car.features}</p>
+                <div className="bg-gradient-to-tr from-zinc-900 to-zinc-800 border border-gray-700 rounded-xl p-6 md:p-8 shadow-xl transition hover:shadow-white/20 mx-auto max-w-4xl text-white">
+                    <img className="w-full rounded-lg object-cover" src={car.img} alt={car.name} />
+                    <div className="mt-6 space-y-3">
+                        <h3 className="text-3xl font-semibold">{car.name}</h3>
+                        <p className="text-lg">🚗 <span className="font-medium">Type:</span> {car.type}</p>
+                        <p className="text-lg">🏷️ <span className="font-medium">Brand:</span> {car.brand}</p>
+                        <p className="text-lg">⛽ <span className="font-medium">Fuel Type:</span> {car.fuelType}</p>
+                        <p className="text-lg">✨ <span className="font-medium">Features:</span> {car.features}</p>
+                    </div>
                 </div>
-                <CustomSubHeading SubHeadingClass="pt-10 text-white" SubHeadingText="Car Images" />
-                <Swiper className='mt-10'
+                <CustomSubHeading SubHeadingClass="pt-12 text-white" SubHeadingText="Car Images" />
+                <Swiper
+                    className="mt-8"
                     slidesPerView={1}
-                    autoplay={{
-                        delay: 1500,
-                    }}
                     loop={true}
-                    spaceBetween={10}
+                    autoplay={{ delay: 1500 }}
+                    spaceBetween={20}
                     modules={[Autoplay]}
-                    pagination={{
-                        clickable: true,
-                    }}
                     breakpoints={{
-                        0: {
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                        },
-                        640: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 40,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 50,
-                        },
-                    }}>
-                    <SwiperSlide> {car.img_1 && <img className='max-lg:px-3 w-full lg:max-w-[335px]' src={car.img_1} alt="car img 1" />}</SwiperSlide>
-                    <SwiperSlide>
-                        {car.img_2 && <img className='max-lg:px-3 w-full lg:max-w-[335px]' src={car.img_2} alt="car img 2" />}
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        {car.img_3 && <img className='max-lg:px-3 w-full lg:max-w-[335px]' src={car.img_3} alt="car img 3" />}
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        {car.img_4 && <img className='max-lg:px-3 w-full lg:max-w-[335px]' src={car.img_4} alt="car img 4" />}
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        {car.img_5 && <img className='max-lg:px-3 w-full lg:max-w-[335px]' src={car.img_5} alt="car img 5" />}
-                    </SwiperSlide>
+                        640: { slidesPerView: 2, spaceBetween: 20 },
+                        768: { slidesPerView: 2, spaceBetween: 30 },
+                        1024: { slidesPerView: 3, spaceBetween: 40 },
+                    }}
+                >
+                    {car.img_1 && (
+                        <SwiperSlide>
+                            <div className="rounded-lg overflow-hidden shadow-md hover:shadow-white/30 transition">
+                                <img className="w-full h-60 object-cover" src={car.img_1} alt="Car img 1" />
+                            </div>
+                        </SwiperSlide>
+                    )}
+                    {car.img_2 && (
+                        <SwiperSlide>
+                            <div className="rounded-lg overflow-hidden shadow-md hover:shadow-white/30 transition">
+                                <img className="w-full h-60 object-cover" src={car.img_2} alt="Car img 2" />
+                            </div>
+                        </SwiperSlide>
+                    )}
+                    {car.img_3 && (
+                        <SwiperSlide>
+                            <div className="rounded-lg overflow-hidden shadow-md hover:shadow-white/30 transition">
+                                <img className="w-full h-60 object-cover" src={car.img_3} alt="Car img 3" />
+                            </div>
+                        </SwiperSlide>
+                    )}
+                    {car.img_4 && (
+                        <SwiperSlide>
+                            <div className="rounded-lg overflow-hidden shadow-md hover:shadow-white/30 transition">
+                                <img className="w-full h-60 object-cover" src={car.img_4} alt="Car img 4" />
+                            </div>
+                        </SwiperSlide>
+                    )}
+                    {car.img_5 && (
+                        <SwiperSlide>
+                            <div className="rounded-lg overflow-hidden shadow-md hover:shadow-white/30 transition">
+                                <img className="w-full h-60 object-cover" src={car.img_5} alt="Car img 5" />
+                            </div>
+                        </SwiperSlide>
+                    )}
                 </Swiper>
-                <Link
-                    className='font-family-primary text-2xl font-semibold border-[2px] text-white max-w-[145px] border-white px-7 py-2.5 rounded-3xl mt-8 mx-auto flex hover:scale-105 transition-all duration-300 ease-linear'
-                    to="/product">
-                    Go Back
-                </Link>
+                <div className="flex justify-center mt-10">
+                    <Link
+                        to="/product"
+                        className="px-6 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-black transition-transform transform hover:scale-105"
+                    >  ← Go Back </Link>
+                </div>
             </div>
         </div>
     );
